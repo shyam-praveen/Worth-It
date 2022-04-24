@@ -1,0 +1,59 @@
+<%- include("Partials/header") -%>
+<link rel="stylesheet" href="css/resultrates.css">
+
+    <div class="container resultdiv">
+
+        <div class="PriceBoxFood container">
+            <h1 class="itemHead">ITEM: </h1>
+            <h1 class="foodItemHead"><%= foodItem %></h1>
+        </div>
+        <div class="companies">
+            <h3 style="text-align: center;"><%= resName %></h3>
+            <div class="zomatoFood companiesFood">
+                <img src="../zomatologo.png" alt="" class="zomatoLogo">
+                <div class="orgZomCost orgPrice">
+                    <h5 >Orginal Price: </h5>
+                    <h5>Rs.<%= zomOrgCost %></h5>
+                </div>
+                <div class="orgPrice">
+                    <h5>Available Coupons</h5>
+                    <h5><%= card %>: <%= couponDiscZom %>%</h5>
+                </div>
+                <div class="orgPrice">
+                    <h5>Final Price</h5>
+                    <h5>Rs. <%= ZomFinalPrice %></h5>
+                </div>
+                <div class="orgPrice">
+                    <h5>Order Now</h5>
+                    <h5><a href="<%= zomResURL %>" target="_blank">Click Here</a></h5>
+                </div>
+            </div>
+            <div class="zomatoFood companiesFood">
+                <img src="https://www.oneindia.com/img/1200x80/2017/07/swiggy-19-1500443913.jpg" alt="" class="zomatoLogo">
+                <div class="orgZomCost orgPrice">
+                    <h5 >Orginal Price: </h5>
+                    <h5>Rs.<%= swigOrgCost %></h5>
+                </div>
+                <div class="orgPrice">
+                    <h5>Available Coupons</h5>
+                    <h5><%= card %>:  <%= couponDiscSwig %>%</h5>
+                </div>
+                <div class="orgPrice">
+                    <h5>Final Price</h5>
+                    <h5>Rs. <%= SwigFinalPrice %></h5>
+                </div>
+                <div class="orgPrice">
+                    <h5>Order Now</h5>
+                    <h5><a href="<%= zomResURL %>"target="_blank">Click Here</a></h5>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+            
+<%- include("Partials/footer") -%>

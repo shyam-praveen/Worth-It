@@ -1,0 +1,62 @@
+      <%- include("Partials/header") -%>
+
+      <header>
+          <h1 class="mainHeading"><span class="WorthIT"><span class="Worth">Worth</span><span class="IT">It</span></span></h1>
+          <p class="paraMainHeading"><span class="paraMainHeadingspan">Your Money is Worth spending wisely</span></p>
+      </header>
+
+      
+      <main>
+          <form action="/" method="post" class="DRCinForm" id="DRCFormIn">
+            <div class="form-floating mb-3 DRCdivin" >
+                <input type="text" class="form-control DRCin" id="floatingInput" name="foodName" placeholder="name@example.com" required autocomplete="off">
+                <label for="floatingInput">Dish name</label>
+              </div>
+              <div class="form-floating mb-3 DRCdivin">
+                <input type="text" class="form-control DRCin" id="floatingPassword" placeholder="Password" name="restaurantName" required autocomplete="off">
+                <label for="floatingPassword">Restaurant Name</label>
+              </div>
+              <div class="sel sel--black-panther">
+                <select name="select-profession" id="select-profession">
+                  <option value="" disabled>Payment Mode</option>
+                  <option value="hacker">COD</option>
+                  <option value="gamer">Slice</option>
+                  <option value="developer">OneCard</option>
+                  <option value="programmer">Lazy Pay</option>
+                  <option value="designer">Other Online Payment</option>
+                </select>
+              </div>
+              <button class="button-54" role="button"><i class="fas fa-hamburger"></i>Find Best Rates</button>
+          </form>
+      </main>
+
+    
+      <div class="page2">
+        <div class="cardsMore">
+            <div class="misCard">
+              <h4><i class="fas fa-coins"></i>Best Rates For Food</h4>
+              <p class="misCardDatapara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores cumque quod neque nobis magnam, reiciendis vero ipsum sapiente eveniet quis?</p>
+            </div>
+            <div class="misCard">
+              <h4><i class="fas fa-pizza-slice"></i>Best Food For Given Cost</h4>
+              <p class="misCardDatapara"> ipsum dolor sit amet consectetur adipisicing elit. Natus veniam, qui perferendis fugit dicta ad. Et recusandae velit expedita laudantium, natus temporibus? Eos commodi at officia quis odit modi deserunt?</p>
+          </div>
+              <div class="misCard">
+             <h4><i class="fas fa-percentage"></i> Best available Coupouns</h4>
+              <p class="misCardDatapara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita sapiente, provident praesentium corrupti quae vitae dignissimos dolor quas officiis corporis hic cumque nisi nam aliquid ab repellendus commodi voluptatum.</p>
+              </div>
+        </div>
+      <div class="BudgetFood" id="FTBB">
+          <h3 class="FTBBHead">Find The Best Food</h3>
+          <p class="FTBBHead">Get Best Food available for You in Your Budget</p>
+          <form action="/foodPrice" method="post" class="budgetForm">
+            <div class="form-floating mb-3 DRCdivin" >
+                <input type="text" class="form-control DRCin" name="budget" id="floatingInput" placeholder="name@example.com" required autocomplete="off">
+                <label for="floatingInput">Budget</label>
+              </div>
+              <button class="button-54" role="button"><i class="fas fa-hamburger"></i>Get Best Food</button>
+          </form>
+      </div>
+    </div>
+    
+    <%- include("Partials/footer") -%>

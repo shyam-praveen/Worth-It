@@ -1,0 +1,24 @@
+body{
+    background-image: url("../fullpage.avif");
+    /* background-repeat: repeat-y; */
+    background-repeat: repeat;
+}
+.headingBudget{
+    text-align: center;
+    margin: 30px;
+    font-family: 'Orelega One', cursive;
+    color: black;
+}
+.itemFood{
+    margin: 20px;
+    border-radius: 7px;
+    background-color: rgba(242, 242, 216, 0.684);
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.valuesFood{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}

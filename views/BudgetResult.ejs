@@ -1,0 +1,27 @@
+<%- include("Partials/header") -%>
+<link rel="stylesheet" href="css/budgetResult.css">
+    <h1 class="headingBudget">Best Food Under Given Budget: Rs.<%= budget %></h1>
+    <ul>
+        <% foods.forEach((food)=>{ %>
+            <li>
+                <ul class="itemFood">
+                    <li class="valuesFood">
+                        Restaurant Name: <%= food.resName %>
+                    </li>
+                    <li class="valuesFood">
+                        Food Item: <%= food.foodName %>
+                    </li>
+                    <li class="valuesFood">
+                        Price: <%= food.price %>
+                    </li>
+                    <li class="valuesFood">
+                        rating: <%= food.rating %>
+                    </li>
+                </ul>            
+                
+            </li>
+        <% }) %>
+        
+    </ul>
+
+    <%- include("Partials/footer") -%>
